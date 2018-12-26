@@ -1,0 +1,298 @@
+/* -------------------- */
+/* ----- ОСНОВНЫЕ ----- */
+/* -------------------- */
+#header {margin-bottom: 20px;}
+#xadmin .uk-badge {color: #9E9E9E; border: 1px solid #9E9E9E; text-transform: none;} /* метка */
+#xadmin dl {overflow: unset;}
+#xadmin dt {font-weight: normal;}
+
+/* --------------------- */
+/* ----- СООБЩЕНИЯ ----- */
+/* --------------------- */
+.iziToast-wrapper {padding: 0px;}
+.iziToast {font-family: "Open Sans Condensed";}
+.iziToast > .iziToast-body .iziToast-title {font-size: 20px; line-height: 20px; font-weight: normal;}
+.iziToast > .iziToast-body .iziToast-message {font-size: 18px; line-height: 18px;}
+.iziToast.iziToast-color-dark {background: rgba(86, 92, 112, 0.9);} /* dark */
+.iziToast.iziToast-color-blue {background: rgba(0, 172, 193, 0.9);} /* info - синий */
+.iziToast.iziToast-color-green {background: rgba(78, 201, 0, 0.9);} /* success - зеленый */
+.iziToast.iziToast-color-orange {background: rgba(55, 71, 79, 0.9);} /* warning - темный */
+.iziToast.iziToast-color-red {background: rgba(255, 61, 0, 0.9);} /* error - красный */
+.iziToast.iziToast-color-yellow {background: rgba(249, 168, 37, 0.9);} /* question - желтый */
+
+/* -------------------------------------- */
+/* ----- АНИМАЦИЯ ОЖИДАНИЕ ЗАГРУЗКИ ----- */
+/* -------------------------------------- */
+#wait
+{
+    border-top: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+    border-left: 2px solid #3A94E0;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0px 0px -25px;
+    z-index: 100001;
+    position: fixed;
+    display: none;
+
+    /* уголки */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+
+    /* анимация */
+    -webkit-animation: spinner 700ms infinite linear;
+    -moz-animation: spinner 700ms infinite linear;
+    -o-animation: spinner 700ms infinite linear;
+    -ms-animation: spinner 700ms infinite linear;
+    animation: spinner 700ms infinite linear;
+}
+@-webkit-keyframes spinner {0% {-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);} 100% {-webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg);}}
+@-moz-keyframes spinner {0% {-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);} 100% {-webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg);}}
+@-o-keyframes spinner {0% {-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);} 100% {-webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg);}}
+@keyframes spinner {0% {-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);} 100% {-webkit-transform: rotate(360deg); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -o-transform: rotate(360deg); transform: rotate(360deg);}}
+
+/* ------------------ */
+/* ----- КНОПКА ----- */
+/* ------------------ */
+.uk-button
+{
+    background-color: #0277BD;
+    border: none;
+    min-height: 32px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 32px;
+    text-transform: none;
+    position: relative;
+    overflow: hidden;
+
+    /* фон */
+    background-image: linear-gradient(bottom, #0277BD 0%, #81D4FA 100%);
+    background-image: -o-linear-gradient(bottom, #0277BD 0%, #81D4FA 100%);
+    background-image: -moz-linear-gradient(bottom, #0277BD 0%, #81D4FA 100%);
+    background-image: -webkit-linear-gradient(bottom, #0277BD 0%, #81D4FA 100%);
+    background-image: -ms-linear-gradient(bottom, #0277BD 0%, #81D4FA 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #0277BD), color-stop(1, #81D4FA));
+
+    /* тень */
+    -webkit-box-shadow: 0px 3px 0px 0px #004B86, 0px 6px 3px rgba(3, 155, 229, 0.5);
+    -moz-box-shadow: 0px 3px 0px 0px #004B86, 0px 6px 3px rgba(3, 155, 229, 0.5);
+    -o-box-shadow: 0px 3px 0px 0px #004B86, 0px 6px 3px rgba(3, 155, 229, 0.5);
+    box-shadow: 0px 3px 0px 0px #004B86, 0px 6px 3px rgba(3, 155, 229, 0.5);
+
+    /* уголки */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+
+    /* анимация */
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+}
+.uk-button:active, .uk-button.uk-active /* активная */
+{
+    top: 1px;
+
+    /* тень */
+    -webkit-box-shadow: 0px 2px 0px 0px #004B86, 0px 4px 2px rgba(3, 155, 229, 0.5);
+    -moz-box-shadow: 0px 2px 0px 0px #004B86, 0px 4px 2px rgba(3, 155, 229, 0.5);
+    -o-box-shadow: 0px 2px 0px 0px #004B86, 0px 4px 2px rgba(3, 155, 229, 0.5);
+    box-shadow: 0px 2px 0px 0px #004B86, 0px 4px 2px rgba(3, 155, 229, 0.5);
+}
+.uk-button:hover, .uk-button:focus {color: #fff; outline-style: none; outline-width: 0px !important; outline-color: none !important;}
+
+/* ----- ОБЛЕГЧЕННАЯ КНОПКА ----- */
+.uk-button-simple
+{
+    border: 1px solid #9e9e9e;
+    min-height: 33px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    /* фон */
+    background-color: #e0e0e0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0.3)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
+    background-image: linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
+    background-clip: padding-box;
+
+     /* тень */
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+
+    /* уголки */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+
+    /* width/height включают в себя padding и border */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+
+    /* анимация */
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.uk-button-simple:focus {outline-style: none; outline-width: 0px !important; outline-color: none !important;}
+.uk-button-simple:active
+{
+    background: #e9e9e9;
+    top: 1px;
+    text-shadow: none;
+    position: relative;
+
+     /* тень */
+    -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1) inset;
+    -o-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* ----- ОТБЛЕСК КНОПКИ - HOVER ----- */
+.uk-button:after, .uk-button-simple:after
+{
+    content: "";
+    border-right: 1px solid transparent;
+    top: 0px;
+    left: -170%;
+    width: 140%;
+    height: 110%;
+    position: absolute;
+
+    /* трансформации */
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    transform: skew(-20deg);
+}
+.uk-button:after
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-right-color: rgba(255, 255, 255, 0.5)
+}
+.uk-button-simple:after /* отблеск облегченной кнопки */
+{
+    background-color: rgba(158, 158, 158, 0.1);
+    border-right-color: rgba(0, 0, 0, 0.3)
+}
+
+.uk-button:hover:after, .uk-button-simple:hover:after
+{
+    left: -20%;
+
+    /* анимация */
+    -webkit-transition: left 0.8s;
+    -moz-transition: left 0.8s;
+    -ms-transition: left 0.8s;
+    -o-transition: left 0.8s;
+    transition: left 0.8s;
+}
+
+/* --------------------------- */
+/* ----- ЭЛЕМЕНТЫ ТЕКСТА ----- */
+/* --------------------------- */
+input[type='text']
+{
+    background-color: #fff;
+    border: 1px solid #7d7d7d !important;
+    width: 100%;
+    height: 35px !important;
+    padding: 0px 5px !important;
+    color: #212121;
+    font: 14px "Open Sans";
+    text-transform: lowercase;
+
+    /* width/height включают в себя padding и border */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+
+    /* анимация */
+    -webkit-transition: color, box-shadow 0.2s linear 0s;
+    -moz-transition: color, box-shadow 0.2s linear 0s;
+    -o-transition: color, box-shadow 0.2s linear 0s;
+    transition: color, box-shadow 0.2s linear 0s;
+
+    /* уголки */
+    -moz-border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+    -khtml-border-radius: 3px !important;
+    -o-border-radius: 3px !important;
+    border-radius: 3px !important;
+
+    /* тень */
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(158, 158, 158, 0.6) inset;
+    -moz-box-shadow: 0px 1px 4px 0px rgba(158, 158, 158, 0.6) inset;
+    -o-box-shadow: 0px 1px 4px 0px rgba(158, 158, 158, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(158, 158, 158, 0.6) inset;
+}
+
+input[type='text']:hover
+{
+    border: 1px solid #00838f !important;
+
+    /* тень */
+    -webkit-box-shadow: 0px 1px 4px 0px #9e9e9e inset;
+    -moz-box-shadow: 0px 1px 4px 0px #9e9e9e inset;
+    -o-box-shadow: 0px 1px 4px 0px #9e9e9e inset;
+    box-shadow: 0px 1px 4px 0px #9e9e9e inset;
+}
+
+input[type='text']:focus
+{
+    color: #212121;
+    outline: none !important; outline-style: none !important; outline-width: 0px !important; outline-color: none !important;
+
+    /* анимация */
+    animation: glow 800ms ease-out infinite alternate;
+    -webkit-animation: glow 800ms ease-out infinite alternate;
+    -moz-animation: glow 800ms ease-out infinite alternate;
+    -o-animation: glow 800ms ease-out infinite alternate;
+    -ms-animation: glow 800ms ease-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        border-color: rgba(0, 172, 193. 0.6);
+
+        /* тень */
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(158, 158, 158, 0.6) inset;
+        -moz-box-shadow: 0px 0px 5px 0px rgba(158, 158, 158, 0.6) inset;
+        -o-box-shadow: 0px 0px 5px 0px rgba(158, 158, 158, 0.6) inset;
+        box-shadow: 0px 0px 5px 0px rgba(158, 158, 158, 0.6) inset;
+    }
+    100% {
+        border-color: #00838f;
+
+        /* тень */
+        -webkit-box-shadow: 0px 0px 5px 0px #7d7d7d inset;
+        -moz-box-shadow: 0px 0px 5px 0px #7d7d7d inset;
+        -o-box-shadow: 0px 0px 5px 0px #7d7d7d inset;
+        box-shadow: 0px 0px 5px 0px #7d7d7d inset;
+    }
+}
