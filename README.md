@@ -1,4 +1,4 @@
-# XAdmin Extension
+# Pagekit - XAdmin extension
 
 Managing the url-address login of admin panel.
 
