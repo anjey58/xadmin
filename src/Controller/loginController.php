@@ -1,6 +1,6 @@
 <?php
 
-namespace Pagekit\xadmin\Controller;
+namespace anjey\xadmin\Controller;
 
 use Pagekit\Application as App;
 use Pagekit\Auth\Auth;
