@@ -9,7 +9,7 @@ return [
 
     // --------------- РЕГИСТРАЦИЯ ПРОСТРАНСТВ ИМЕН ---------------
     'autoload' => [
-        'Pagekit\\xadmin\\' => 'src'
+        'anjey\\xadmin\\' => 'src'
     ],
 
     // --------------- МАРШРУТ КОНТРОЛЛЕРА ---------------
@@ -17,17 +17,17 @@ return [
         // -----основной контроллер
         '/xadmin' => [
             'name' => '@xadmin/admin',
-            'controller' => 'Pagekit\\xadmin\\Controller\\indexController'
+            'controller' => 'anjey\\xadmin\\Controller\\indexController'
         ],
         // -----для работы с БД
         '/xadmin/bd' => [
             'name' => '@xadmin/bd',
-            'controller' => 'Pagekit\\xadmin\\Controller\\bdController'
+            'controller' => 'anjey\\xadmin\\Controller\\bdController'
         ],
         // -----управление url-адресом входа в панель администратора
         '/admin' => [
             'name' => '@xadmin',
-            'controller' => 'Pagekit\\xadmin\\Controller\\loginController'
+            'controller' => 'anjey\\xadmin\\Controller\\loginController'
         ]
     ],
 
